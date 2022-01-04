@@ -72,8 +72,8 @@ func dfs(x int, y int) bool {
 
 		/**
 		graph[x][y]가 0일때 true는 확정
-		확정이고 위아래로 자기와 파트너가 있는지 찾는것.
-		찾으면 파트너들을 전부 방문처리 후 main function의 for loop(line 32:)으로 이동
+		확정이고 위아래로 자기와 파트너가 있는지 찾는 것.
+		찾으면 파트너들을 전부 방문 처리 후 main function의 for loop(line 32:)으로 이동
 		그리고 자기와 파트너들을 전부 찾았으니 result를 +1 해줌
 		*/
 		return true
@@ -124,8 +124,8 @@ func bfs(x int, y int) bool {
 		}
 	}
 	/**
-	for loop이 시작 된 순간 방문돼지않은 노드임.
-	return true 확정 후 queue로 돌아가면서 노드들 검색 후 방문처리로 덩어리로 만듬
+	for loop이 시작된 순간 방문되지 않은 노드임.
+	return true 확정 후 queue로 돌아가면서 노드들 검색 후 방문 처리로 덩어리로 만듦
 	그리고 return 되면 main function에서 value 0을 찾아서 다시 돌림. 덩어리 +1
 	*/
 	return true
