@@ -46,7 +46,7 @@ func bfs(graph [][]int, start int, visited []bool) {
 	queue.Enqueue(start)
 	// 해당 노드 방문 처리
 	visited[start] = true
-	for queue.Size() > 0 { // queue가 빌때까지
+	for !queue.Empty() { // queue가 빌때까지
 		// --------- (1) --------- //
 		// 큐에서 노드 꺼내기
 		v := queue.Dequeue().(int)
